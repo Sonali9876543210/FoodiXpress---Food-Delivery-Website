@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Our Food Menu</h1>
+        <nav>
+            <a href="index.html" class="btn hbtn">Home</a>
+            <a href="categories.html" class="btn hbtn">Categories</a>
+            <a href="foods.html" class="btn hbtn">Foods</a>
+            <a href="about.html" class="btn hbtn">About Us</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Traditional Indian Platter</h2>
+<div class="food-container">
+<div class="food-item">
+            <img src="../images/odisha_thali.webp" alt="Odisha Thali">
+            <p>Odisha Thali - ₹350</p>
+            <button class="qty-btn" onclick="decreaseQty('odisha_thali')">-</button>
+            <span id="odisha_thali-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('odisha_thali')">+</button>
+            <button onclick="addToCart('odisha_thali', 350)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/north_indian_thali.webp" alt="North Indian Thali">
+            <p>North Indian Thali - ₹400</p>
+            <button class="qty-btn" onclick="decreaseQty('north_indian_thali')">-</button>
+            <span id="north_indian_thali-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('north_indian_thali')">+</button>
+            <button onclick="addToCart('north_indian_thali', 400)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/south_indian_thali.webp" alt="South Indian Thali">
+            <p>South Indian Thali - ₹380</p>
+            <button class="qty-btn" onclick="decreaseQty('south_indian_thali')">-</button>
+            <span id="south_indian_thali-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('south_indian_thali')">+</button>
+            <button onclick="addToCart('south_indian_thali', 380)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/bengali_thali.webp" alt="Bengali Thali">
+            <p>Bengali Thali - ₹420</p>
+            <button class="qty-btn" onclick="decreaseQty('bengali_thali')">-</button>
+            <span id="bengali_thali-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('bengali_thali')">+</button>
+            <button onclick="addToCart('bengali_thali', 420)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/rajasthani_thali.webp" alt="Rajasthani Thali">
+            <p>Rajasthani Thali - ₹390</p>
+            <button class="qty-btn" onclick="decreaseQty('rajasthani_thali')">-</button>
+            <span id="rajasthani_thali-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('rajasthani_thali')">+</button>
+            <button onclick="addToCart('rajasthani_thali', 390)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class="food-container">
+        <div class="food-item">
+            <img src="../images/gujarati_thali.webp" alt="Gujarati Thali">
+            <p>Gujarati Thali - ₹370</p>
+            <button class="qty-btn" onclick="decreaseQty('gujarati_thali')">-</button>
+            <span id="gujarati_thali-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('gujarati_thali')">+</button>
+            <button onclick="addToCart('gujarati_thali', 370)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/maharashtrian_thali.webp.jpg" alt="Maharashtrian Thali">
+            <p>Maharashtrian Thali - ₹360</p>
+            <button class="qty-btn" onclick="decreaseQty('maharashtrian_thali')">-</button>
+            <span id="maharashtrian_thali-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('maharashtrian_thali')">+</button>
+            <button onclick="addToCart('maharashtrian_thali', 360)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/goan_thali.jpg" alt="Goan Thali (Non-Veg)">
+            <p>Goan Thali (Non-Veg) - ₹450</p>
+            <button class="qty-btn" onclick="decreaseQty('goan_thali_nonveg')">-</button>
+            <span id="goan_thali_nonveg-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('goan_thali_nonveg')">+</button>
+            <button onclick="addToCart('goan_thali_nonveg', 450)" class="checkout-btn">Add</button>
+        </div>
+        
+
+</div><h2>Starters - Soups</h2>
+<div class="food-container">
+<div class="food-item">
+            <img src="../images/tomato_basil_soup.jpg" alt="Tomato Basil Soup">
+            <p>Tomato Basil Soup - ₹180</p>
+            <button class="qty-btn" onclick="decreaseQty('tomato_basil_soup')">-</button>
+            <span id="tomato_basil_soup-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('tomato_basil_soup')">+</button>
+            <button onclick="addToCart('tomato_basil_soup', 180)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/sweet_corn_soup_veg_chicken.webp.jpg" alt="Sweet Corn Soup (Veg/Chicken)">
+            <p>Sweet Corn Soup (Veg/Chicken) - ₹150</p>
+            <button class="qty-btn" onclick="decreaseQty('sweet_corn_soup_veg_chicken')">-</button>
+            <span id="sweet_corn_soup_veg_chicken-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('sweet_corn_soup_veg_chicken')">+</button>
+            <button onclick="addToCart('sweet_corn_soup_veg_chicken', 150)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/hot_&_sour_soup_veg_chicken.webp.jpg" alt="Hot & Sour Soup (Veg/Chicken)">
+            <p>Hot & Sour Soup (Veg/Chicken) - ₹160</p>
+            <button class="qty-btn" onclick="decreaseQty('hot_&_sour_soup_veg_chicken')">-</button>
+            <span id="hot_&_sour_soup_veg_chicken-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('hot_&_sour_soup_veg_chicken')">+</button>
+            <button onclick="addToCart('hot_&_sour_soup_veg_chicken', 160)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/miso_soup.webp.jpg" alt="Miso Soup">
+            <p>Miso Soup - ₹200</p>
+            <button class="qty-btn" onclick="decreaseQty('miso_soup')">-</button>
+            <span id="miso_soup-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('miso_soup')">+</button>
+            <button onclick="addToCart('miso_soup', 200)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/lemon_coriander_soup.webp.jpg" alt="Lemon Coriander Soup">
+            <p>Lemon Coriander Soup - ₹170</p>
+            <button class="qty-btn" onclick="decreaseQty('lemon_coriander_soup')">-</button>
+            <span id="lemon_coriander_soup-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('lemon_coriander_soup')">+</button>
+            <button onclick="addToCart('lemon_coriander_soup', 170)" class="checkout-btn">Add</button>
+        </div>
+        
+
+</div><h2>Starters - Appetizers</h2>
+<div class="food-container">
+<div class="food-item">
+            <img src="../images/paneer_tikka.jpeg" alt="Paneer Tikka">
+            <p>Paneer Tikka - ₹250</p>
+            <button class="qty-btn" onclick="decreaseQty('paneer_tikka')">-</button>
+            <span id="paneer_tikka-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('paneer_tikka')">+</button>
+            <button onclick="addToCart('paneer_tikka', 250)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/garlic_bread_with_cheese.webp.jpg" alt="Garlic Bread with Cheese">
+            <p>Garlic Bread with Cheese - ₹180</p>
+            <button class="qty-btn" onclick="decreaseQty('garlic_bread_with_cheese')">-</button>
+            <span id="garlic_bread_with_cheese-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('garlic_bread_with_cheese')">+</button>
+            <button onclick="addToCart('garlic_bread_with_cheese', 180)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/tempura_prawn_veg.webp.jpg" alt="Tempura (Prawn/Veg)">
+            <p>Tempura (Prawn/Veg) - ₹300</p>
+            <button class="qty-btn" onclick="decreaseQty('tempura_prawn_veg')">-</button>
+            <span id="tempura_prawn_veg-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('tempura_prawn_veg')">+</button>
+            <button onclick="addToCart('tempura_prawn_veg', 300)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/caesar_salad.webp.jpg" alt="Caesar Salad">
+            <p>Caesar Salad - ₹220</p>
+            <button class="qty-btn" onclick="decreaseQty('caesar_salad')">-</button>
+            <span id="caesar_salad-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('caesar_salad')">+</button>
+            <button onclick="addToCart('caesar_salad', 220)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/spring_rolls_veg_chicken.webp.jpg" alt="Spring Rolls (Veg/Chicken)">
+            <p>Spring Rolls (Veg/Chicken) - ₹180</p>
+            <button class="qty-btn" onclick="decreaseQty('spring_rolls_veg_chicken')">-</button>
+            <span id="spring_rolls_veg_chicken-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('spring_rolls_veg_chicken')">+</button>
+            <button onclick="addToCart('spring_rolls_veg_chicken', 180)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/chilli.jpg" alt="Chilli Paneer / Chilli Chicken">
+            <p>Chilli Paneer / Chilli Chicken - ₹220</p>
+            <button class="qty-btn" onclick="decreaseQty('chilli_paneer___chilli_chicken')">-</button>
+            <span id="chilli_paneer___chilli_chicken-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('chilli_paneer___chilli_chicken')">+</button>
+            <button onclick="addToCart('chilli_paneer___chilli_chicken', 220)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/panipuri.jpg" alt="Pani Puri / Golgappa">
+            <p>Pani Puri / Golgappa - ₹100</p>
+            <button class="qty-btn" onclick="decreaseQty('pani_puri___golgappa')">-</button>
+            <span id="pani_puri___golgappa-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('pani_puri___golgappa')">+</button>
+            <button onclick="addToCart('pani_puri___golgappa', 100)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/chicken_pakoda.jpg" alt="Chicken Pakoda">
+            <p>Chicken Pakoda - ₹220</p>
+            <button class="qty-btn" onclick="decreaseQty('chicken_pakoda')">-</button>
+            <span id="chicken_pakoda-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('chicken_pakoda')">+</button>
+            <button onclick="addToCart('chicken_pakoda', 220)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/mushroom_pakoda.jpg" alt="Mushroom Pakoda">
+            <p>Mushroom Pakoda - ₹200</p>
+            <button class="qty-btn" onclick="decreaseQty('mushroom_pakoda')">-</button>
+            <span id="mushroom_pakoda-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('mushroom_pakoda')">+</button>
+            <button onclick="addToCart('mushroom_pakoda', 200)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/tandoori_chicken.jpg" alt="Authentic Tandoori Chicken">
+            <p>Authentic Tandoori Chicken - ₹350</p>
+            <button class="qty-btn" onclick="decreaseQty('authentic_tandoori_chicken')">-</button>
+            <span id="authentic_tandoori_chicken-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('authentic_tandoori_chicken')">+</button>
+            <button onclick="addToCart('authentic_tandoori_chicken', 350)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/seekhkebab.webp" alt="Mutton Seekh Kebab">
+            <p>Mutton Seekh Kebab - ₹400</p>
+            <button class="qty-btn" onclick="decreaseQty('mutton_seekh_kebab')">-</button>
+            <span id="mutton_seekh_kebab-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('mutton_seekh_kebab')">+</button>
+            <button onclick="addToCart('mutton_seekh_kebab', 400)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/prawn_koliwada.jpg" alt="Prawn Koliwada">
+            <p>Prawn Koliwada - ₹450</p>
+            <button class="qty-btn" onclick="decreaseQty('prawn_koliwada')">-</button>
+            <span id="prawn_koliwada-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('prawn_koliwada')">+</button>
+            <button onclick="addToCart('prawn_koliwada', 450)" class="checkout-btn">Add</button>
+        </div>
+        
+
+</div><h2>Main Course - Vegetarian Dishes</h2>
+<div class="food-container">
+<div class="food-item">
+            <img src="../images/baingan_bharta.jpg" alt="Baingan Bharta with Tandoori Roti">
+            <p>Baingan Bharta with Tandoori Roti - ₹250</p>
+            <button class="qty-btn" onclick="decreaseQty('baingan_bharta_with_tandoori_roti')">-</button>
+            <span id="baingan_bharta_with_tandoori_roti-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('baingan_bharta_with_tandoori_roti')">+</button>
+            <button onclick="addToCart('baingan_bharta_with_tandoori_roti', 250)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/veg_handi_biryani.jpg" alt="Veg Handi Biryani">
+            <p>Veg Handi Biryani - ₹280</p>
+            <button class="qty-btn" onclick="decreaseQty('veg_handi_biryani')">-</button>
+            <span id="veg_handi_biryani-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('veg_handi_biryani')">+</button>
+            <button onclick="addToCart('veg_handi_biryani', 280)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/methi_malai_mutter.jpg" alt="Methi Malai Mutter">
+            <p>Methi Malai Mutter - ₹260</p>
+            <button class="qty-btn" onclick="decreaseQty('methi_malai_mutter')">-</button>
+            <span id="methi_malai_mutter-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('methi_malai_mutter')">+</button>
+            <button onclick="addToCart('methi_malai_mutter', 260)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/stuffed_bell_peppers_with_paneer_&_spices.jpg" alt="Stuffed Bell Peppers with Paneer & Spices">
+            <p>Stuffed Bell Peppers with Paneer & Spices - ₹280</p>
+            <button class="qty-btn" onclick="decreaseQty('stuffed_bell_peppers_with_paneer_&_spices')">-</button>
+            <span id="stuffed_bell_peppers_with_paneer_&_spices-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('stuffed_bell_peppers_with_paneer_&_spices')">+</button>
+            <button onclick="addToCart('stuffed_bell_peppers_with_paneer_&_spices', 280)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/thai_basil_tofu_with_steamed_rice.jpg" alt="Thai Basil Tofu with Steamed Rice">
+            <p>Thai Basil Tofu with Steamed Rice - ₹300</p>
+            <button class="qty-btn" onclick="decreaseQty('thai_basil_tofu_with_steamed_rice')">-</button>
+            <span id="thai_basil_tofu_with_steamed_rice-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('thai_basil_tofu_with_steamed_rice')">+</button>
+            <button onclick="addToCart('thai_basil_tofu_with_steamed_rice', 300)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/dal_tadka_with_jeera_rice.jpg" alt="Dal Tadka with Jeera Rice">
+            <p>Dal Tadka with Jeera Rice - ₹250</p>
+            <button class="qty-btn" onclick="decreaseQty('dal_tadka_with_jeera_rice')">-</button>
+            <span id="dal_tadka_with_jeera_rice-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('dal_tadka_with_jeera_rice')">+</button>
+            <button onclick="addToCart('dal_tadka_with_jeera_rice', 250)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/chana_masala_with_bhature.jpg" alt="Chana Masala with Bhature">
+            <p>Chana Masala with Bhature - ₹260</p>
+            <button class="qty-btn" onclick="decreaseQty('chana_masala_with_bhature')">-</button>
+            <span id="chana_masala_with_bhature-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('chana_masala_with_bhature')">+</button>
+            <button onclick="addToCart('chana_masala_with_bhature', 260)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/mushroom_do_pyaza.jpg" alt="Mushroom Do Pyaza">
+            <p>Mushroom Do Pyaza - ₹270</p>
+            <button class="qty-btn" onclick="decreaseQty('mushroom_do_pyaza')">-</button>
+            <span id="mushroom_do_pyaza-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('mushroom_do_pyaza')">+</button>
+            <button onclick="addToCart('mushroom_do_pyaza', 270)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/spinach_&_ricotta_ravioli_in_cream_sauce.jpg" alt="Spinach & Ricotta Ravioli in Cream Sauce">
+            <p>Spinach & Ricotta Ravioli in Cream Sauce - ₹350</p>
+            <button class="qty-btn" onclick="decreaseQty('spinach_&_ricotta_ravioli_in_cream_sauce')">-</button>
+            <span id="spinach_&_ricotta_ravioli_in_cream_sauce-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('spinach_&_ricotta_ravioli_in_cream_sauce')">+</button>
+            <button onclick="addToCart('spinach_&_ricotta_ravioli_in_cream_sauce', 350)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/szechuan_tofu_stirfry.jpg" alt="Szechuan Tofu Stir-Fry">
+            <p>Szechuan Tofu Stir-Fry - ₹280</p>
+            <button class="qty-btn" onclick="decreaseQty('szechuan_tofu_stirfry')">-</button>
+            <span id="szechuan_tofu_stirfry-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('szechuan_tofu_stirfry')">+</button>
+            <button onclick="addToCart('szechuan_tofu_stirfry', 280)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/kadhi_pakora_with_steamed_rice.jpg" alt="Kadhi Pakora with Steamed Rice">
+            <p>Kadhi Pakora with Steamed Rice - ₹240</p>
+            <button class="qty-btn" onclick="decreaseQty('kadhi_pakora_with_steamed_rice')">-</button>
+            <span id="kadhi_pakora_with_steamed_rice-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('kadhi_pakora_with_steamed_rice')">+</button>
+            <button onclick="addToCart('kadhi_pakora_with_steamed_rice', 240)" class="checkout-btn">Add</button>
+        </div>
+        
+
+</div><h2>Main Course - Non-Vegetarian Dishes</h2>
+<div class="food-container">
+<div class="food-item">
+            <img src="../images/hyderabadi_biryani_chicken_mutton.jpg" alt="Hyderabadi Biryani (Chicken/Mutton)">
+            <p>Hyderabadi Biryani (Chicken/Mutton) - ₹400</p>
+            <button class="qty-btn" onclick="decreaseQty('hyderabadi_biryani_chicken_mutton')">-</button>
+            <span id="hyderabadi_biryani_chicken_mutton-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('hyderabadi_biryani_chicken_mutton')">+</button>
+            <button onclick="addToCart('hyderabadi_biryani_chicken_mutton', 400)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/mutton_biryani_dum_style.jpg" alt="Mutton Biryani (Dum Style)">
+            <p>Mutton Biryani (Dum Style) - ₹420</p>
+            <button class="qty-btn" onclick="decreaseQty('mutton_biryani_dum_style')">-</button>
+            <span id="mutton_biryani_dum_style-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('mutton_biryani_dum_style')">+</button>
+            <button onclick="addToCart('mutton_biryani_dum_style', 420)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/grilled_chicken_with_mashed_potatoes_&_veggies.jpg" alt="Grilled Chicken with Mashed Potatoes & Veggies">
+            <p>Grilled Chicken with Mashed Potatoes & Veggies - ₹400</p>
+            <button class="qty-btn" onclick="decreaseQty('grilled_chicken_with_mashed_potatoes_&_veggies')">-</button>
+            <span id="grilled_chicken_with_mashed_potatoes_&_veggies-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('grilled_chicken_with_mashed_potatoes_&_veggies')">+</button>
+            <button onclick="addToCart('grilled_chicken_with_mashed_potatoes_&_veggies', 400)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/pasta_alfredo.jpg" alt="Pasta Alfredo / Arrabbiata">
+            <p>Pasta Alfredo / Arrabbiata - ₹300</p>
+            <button class="qty-btn" onclick="decreaseQty('pasta_alfredo___arrabbiata')">-</button>
+            <span id="pasta_alfredo___arrabbiata-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('pasta_alfredo___arrabbiata')">+</button>
+            <button onclick="addToCart('pasta_alfredo___arrabbiata', 300)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/sushi_rolls.jpg" alt="Sushi Rolls (Veg/Non-Veg)">
+            <p>Sushi Rolls (Veg/Non-Veg) - ₹350</p>
+            <button class="qty-btn" onclick="decreaseQty('sushi_rolls_veg_nonveg')">-</button>
+            <span id="sushi_rolls_veg_nonveg-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('sushi_rolls_veg_nonveg')">+</button>
+            <button onclick="addToCart('sushi_rolls_veg_nonveg', 350)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/ramen_veg_chicken.jpg" alt="Ramen (Veg/Chicken)">
+            <p>Ramen (Veg/Chicken) - ₹350</p>
+            <button class="qty-btn" onclick="decreaseQty('ramen_veg_chicken')">-</button>
+            <span id="ramen_veg_chicken-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('ramen_veg_chicken')">+</button>
+            <button onclick="addToCart('ramen_veg_chicken', 350)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/bbq_chicken_wings.jpg" alt="BBQ Chicken Wings">
+            <p>BBQ Chicken Wings - ₹320</p>
+            <button class="qty-btn" onclick="decreaseQty('bbq_chicken_wings')">-</button>
+            <span id="bbq_chicken_wings-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('bbq_chicken_wings')">+</button>
+            <button onclick="addToCart('bbq_chicken_wings', 320)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/muttonroganjosh.webp" alt="Mutton Rogan Josh with Butter Naan">
+            <p>Mutton Rogan Josh with Butter Naan - ₹450</p>
+            <button class="qty-btn" onclick="decreaseQty('mutton_rogan_josh_with_butter_naan')">-</button>
+            <span id="mutton_rogan_josh_with_butter_naan-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('mutton_rogan_josh_with_butter_naan')">+</button>
+            <button onclick="addToCart('mutton_rogan_josh_with_butter_naan', 450)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/fish_tikka.jpg" alt="Fish Tikka with Mint Chutney">
+            <p>Fish Tikka with Mint Chutney - ₹400</p>
+            <button class="qty-btn" onclick="decreaseQty('fish_tikka_with_mint_chutney')">-</button>
+            <span id="fish_tikka_with_mint_chutney-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('fish_tikka_with_mint_chutney')">+</button>
+            <button onclick="addToCart('fish_tikka_with_mint_chutney', 400)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/grilled_fish.jpg" alt="Lemon Herb Grilled Fish">
+            <p>Lemon Herb Grilled Fish - ₹420</p>
+            <button class="qty-btn" onclick="decreaseQty('lemon_herb_grilled_fish')">-</button>
+            <span id="lemon_herb_grilled_fish-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('lemon_herb_grilled_fish')">+</button>
+            <button onclick="addToCart('lemon_herb_grilled_fish', 420)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/chicken_katsu.jpg" alt="Chicken Katsu with Sticky Rice">
+            <p>Chicken Katsu with Sticky Rice - ₹380</p>
+            <button class="qty-btn" onclick="decreaseQty('chicken_katsu_with_sticky_rice')">-</button>
+            <span id="chicken_katsu_with_sticky_rice-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('chicken_katsu_with_sticky_rice')">+</button>
+            <button onclick="addToCart('chicken_katsu_with_sticky_rice', 380)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/thaichicken.jpg" alt="Thai Green Curry (Veg/Chicken) with Jasmine Rice">
+            <p>Thai Green Curry (Veg/Chicken) with Jasmine Rice - ₹400</p>
+            <button class="qty-btn" onclick="decreaseQty('thai_green_curry_veg_chicken_with_jasmine_rice')">-</button>
+            <span id="thai_green_curry_veg_chicken_with_jasmine_rice-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('thai_green_curry_veg_chicken_with_jasmine_rice')">+</button>
+            <button onclick="addToCart('thai_green_curry_veg_chicken_with_jasmine_rice', 400)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/stuffed_chicken.jpg" alt="Stuffed Chicken Breast with Mushroom Sauce">
+            <p>Stuffed Chicken Breast with Mushroom Sauce - ₹420</p>
+            <button class="qty-btn" onclick="decreaseQty('stuffed_chicken_breast_with_mushroom_sauce')">-</button>
+            <span id="stuffed_chicken_breast_with_mushroom_sauce-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('stuffed_chicken_breast_with_mushroom_sauce')">+</button>
+            <button onclick="addToCart('stuffed_chicken_breast_with_mushroom_sauce', 420)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/tandoori_prawns.jpg" alt="Tandoori Prawns with Butter Garlic Sauce">
+            <p>Tandoori Prawns with Butter Garlic Sauce - ₹500</p>
+            <button class="qty-btn" onclick="decreaseQty('tandoori_prawns_with_butter_garlic_sauce')">-</button>
+            <span id="tandoori_prawns_with_butter_garlic_sauce-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('tandoori_prawns_with_butter_garlic_sauce')">+</button>
+            <button onclick="addToCart('tandoori_prawns_with_butter_garlic_sauce', 500)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/goan_prawn_curry.jpg" alt="Goan Prawn Curry with Steamed Rice">
+            <p>Goan Prawn Curry with Steamed Rice - ₹480</p>
+            <button class="qty-btn" onclick="decreaseQty('goan_prawn_curry_with_steamed_rice')">-</button>
+            <span id="goan_prawn_curry_with_steamed_rice-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('goan_prawn_curry_with_steamed_rice')">+</button>
+            <button onclick="addToCart('goan_prawn_curry_with_steamed_rice', 480)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/mangalorean_prawn.jpg" alt="Mangalorean Prawn Gassi">
+            <p>Mangalorean Prawn Gassi - ₹450</p>
+            <button class="qty-btn" onclick="decreaseQty('mangalorean_prawn_gassi')">-</button>
+            <span id="mangalorean_prawn_gassi-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('mangalorean_prawn_gassi')">+</button>
+            <button onclick="addToCart('mangalorean_prawn_gassi', 450)" class="checkout-btn">Add</button>
+        </div>
+        <div class="food-item">
+            <img src="../images/butter_crab.jpg" alt="Butter Garlic Crab">
+            <p>Butter Garlic Crab - ₹550</p>
+            <button class="qty-btn" onclick="decreaseQty('butter_garlic_crab')">-</button>
+            <span id="butter_garlic_crab-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('butter_garlic_crab')">+</button>
+            <button onclick="addToCart('butter_garlic_crab', 550)" class="checkout-btn">Add</button>
+        </div>
+        
+
+</div><h2>Fast Food & Street Food</h2>
+<div class="food-container">
+<div class="food-item">
+            <img src="../images/burger.webp" alt="Burgers (Veg/Chicken/Paneer/Mutton)">
+            <p>Burgers (Veg/Chicken/Paneer/Mutton) - ₹180</p>
+            <button class="qty-btn" onclick="decreaseQty('burgers_veg_chicken_paneer_mutton')">-</button>
+            <span id="burgers_veg_chicken_paneer_mutton-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('burgers_veg_chicken_paneer_mutton')">+</button>
+            <button onclick="addToCart('burgers_veg_chicken_paneer_mutton', 180)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/pizza.webp" alt="Pizza (Margherita, Pepperoni, Tandoori Paneer, BBQ Chicken)">
+            <p>Pizza (Margherita, Pepperoni, Tandoori Paneer, BBQ Chicken) - ₹250</p>
+            <button class="qty-btn" onclick="decreaseQty('pizza_margherita,_pepperoni,_tandoori_paneer,_bbq_chicken')">-</button>
+            <span id="pizza_margherita,_pepperoni,_tandoori_paneer,_bbq_chicken-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('pizza_margherita,_pepperoni,_tandoori_paneer,_bbq_chicken')">+</button>
+            <button onclick="addToCart('pizza_margherita,_pepperoni,_tandoori_paneer,_bbq_chicken', 250)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/momos.jpg" alt="Momos (Steamed/Fried, Veg/Chicken/Mutton)">
+            <p>Momos (Steamed/Fried, Veg/Chicken/Mutton) - ₹120</p>
+            <button class="qty-btn" onclick="decreaseQty('momos_steamed_fried,_veg_chicken_mutton')">-</button>
+            <span id="momos_steamed_fried,_veg_chicken_mutton-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('momos_steamed_fried,_veg_chicken_mutton')">+</button>
+            <button onclick="addToCart('momos_steamed_fried,_veg_chicken_mutton', 120)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/kathi_rolls.jpg" alt="Kathi Rolls (Paneer/Chicken/Mutton/Prawns)">
+            <p>Kathi Rolls (Paneer/Chicken/Mutton/Prawns) - ₹200</p>
+            <button class="qty-btn" onclick="decreaseQty('kathi_rolls_paneer_chicken_mutton_prawns')">-</button>
+            <span id="kathi_rolls_paneer_chicken_mutton_prawns-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('kathi_rolls_paneer_chicken_mutton_prawns')">+</button>
+            <button onclick="addToCart('kathi_rolls_paneer_chicken_mutton_prawns', 200)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/pav_bhaji.jpg" alt="Pav Bhaji">
+            <p>Pav Bhaji - ₹160</p>
+            <button class="qty-btn" onclick="decreaseQty('pav_bhaji')">-</button>
+            <span id="pav_bhaji-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('pav_bhaji')">+</button>
+            <button onclick="addToCart('pav_bhaji', 160)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/vada_pav.jpg" alt="Vada Pav">
+            <p>Vada Pav - ₹100</p>
+            <button class="qty-btn" onclick="decreaseQty('vada_pav')">-</button>
+            <span id="vada_pav-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('vada_pav')">+</button>
+            <button onclick="addToCart('vada_pav', 100)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/tandoori_momos.jpg" alt="Tandoori Momos">
+            <p>Tandoori Momos - ₹180</p>
+            <button class="qty-btn" onclick="decreaseQty('tandoori_momos')">-</button>
+            <span id="tandoori_momos-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('tandoori_momos')">+</button>
+            <button onclick="addToCart('tandoori_momos', 180)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/chicken_shawarma_wrap.jpg" alt="Chicken Shawarma Wrap">
+            <p>Chicken Shawarma Wrap - ₹250</p>
+            <button class="qty-btn" onclick="decreaseQty('chicken_shawarma_wrap')">-</button>
+            <span id="chicken_shawarma_wrap-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('chicken_shawarma_wrap')">+</button>
+            <button onclick="addToCart('chicken_shawarma_wrap', 250)" class="checkout-btn">Add</button>
+        </div>
+        <div class="food-item">
+            <img src="../images/bhuna_keema_pav.jpg" alt="Bhuna Keema Pav">
+            <p>Bhuna Keema Pav - ₹280</p>
+            <button class="qty-btn" onclick="decreaseQty('bhuna_keema_pav')">-</button>
+            <span id="bhuna_keema_pav-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('bhuna_keema_pav')">+</button>
+            <button onclick="addToCart('bhuna_keema_pav', 280)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/fried_chicken.jpg" alt="Fried Chicken (Crispy/Spicy)">
+            <p>Fried Chicken (Crispy/Spicy) - ₹250</p>
+            <button class="qty-btn" onclick="decreaseQty('fried_chicken_crispy_spicy')">-</button>
+            <span id="fried_chicken_crispy_spicy-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('fried_chicken_crispy_spicy')">+</button>
+            <button onclick="addToCart('fried_chicken_crispy_spicy', 250)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/nachos.jpg" alt="Loaded Nachos with Cheese & Jalapenos">
+            <p>Loaded Nachos with Cheese & Jalapenos - ₹280</p>
+            <button class="qty-btn" onclick="decreaseQty('loaded_nachos_with_cheese_&_jalapenos')">-</button>
+            <span id="loaded_nachos_with_cheese_&_jalapenos-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('loaded_nachos_with_cheese_&_jalapenos')">+</button>
+            <button onclick="addToCart('loaded_nachos_with_cheese_&_jalapenos', 280)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/schezwan_dosa.jpg" alt="Schezwan Dosa">
+            <p>Schezwan Dosa - ₹220</p>
+            <button class="qty-btn" onclick="decreaseQty('schezwan_dosa')">-</button>
+            <span id="schezwan_dosa-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('schezwan_dosa')">+</button>
+            <button onclick="addToCart('schezwan_dosa', 220)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/chaat.jpg" alt="Samosa Chaat with Chutneys">
+            <p>Samosa Chaat with Chutneys - ₹150</p>
+            <button class="qty-btn" onclick="decreaseQty('samosa_chaat_with_chutneys')">-</button>
+            <span id="samosa_chaat_with_chutneys-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('samosa_chaat_with_chutneys')">+</button>
+            <button onclick="addToCart('samosa_chaat_with_chutneys', 150)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/prawn_popcorn.jpg" alt="Prawn Popcorn">
+            <p>Prawn Popcorn - ₹300</p>
+            <button class="qty-btn" onclick="decreaseQty('prawn_popcorn')">-</button>
+            <span id="prawn_popcorn-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('prawn_popcorn')">+</button>
+            <button onclick="addToCart('prawn_popcorn', 300)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/mutton_keema_samosa.jpg" alt="Mutton Keema Samosa">
+            <p>Mutton Keema Samosa - ₹250</p>
+            <button class="qty-btn" onclick="decreaseQty('mutton_keema_samosa')">-</button>
+            <span id="mutton_keema_samosa-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('mutton_keema_samosa')">+</button>
+            <button onclick="addToCart('mutton_keema_samosa', 250)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/paneer_tikka_sandwich.jpg" alt="Paneer Tikka Sandwich">
+            <p>Paneer Tikka Sandwich - ₹200</p>
+            <button class="qty-btn" onclick="decreaseQty('paneer_tikka_sandwich')">-</button>
+            <span id="paneer_tikka_sandwich-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('paneer_tikka_sandwich')">+</button>
+            <button onclick="addToCart('paneer_tikka_sandwich', 200)" class="checkout-btn">Add</button>
+        </div>
+        
+
+</div><h2>Desserts</h2>
+<div class="food-container">
+<div class="food-item">
+            <img src="../images/gulab_jamun.jpg" alt="Gulab Jamun with Rabdi">
+            <p>Gulab Jamun with Rabdi - ₹150</p>
+            <button class="qty-btn" onclick="decreaseQty('gulab_jamun_with_rabdi')">-</button>
+            <span id="gulab_jamun_with_rabdi-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('gulab_jamun_with_rabdi')">+</button>
+            <button onclick="addToCart('gulab_jamun_with_rabdi', 150)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/tiramisu.webp" alt="Tiramisu">
+            <p>Tiramisu - ₹280</p>
+            <button class="qty-btn" onclick="decreaseQty('tiramisu')">-</button>
+            <span id="tiramisu-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('tiramisu')">+</button>
+            <button onclick="addToCart('tiramisu', 280)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/mochi_ice_cream.jpg" alt="Mochi Ice Cream">
+            <p>Mochi Ice Cream - ₹250</p>
+            <button class="qty-btn" onclick="decreaseQty('mochi_ice_cream')">-</button>
+            <span id="mochi_ice_cream-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('mochi_ice_cream')">+</button>
+            <button onclick="addToCart('mochi_ice_cream', 250)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/chocolate_mousse.jpg" alt="Chocolate Mousse">
+            <p>Chocolate Mousse - ₹200</p>
+            <button class="qty-btn" onclick="decreaseQty('chocolate_mousse')">-</button>
+            <span id="chocolate_mousse-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('chocolate_mousse')">+</button>
+            <button onclick="addToCart('chocolate_mousse', 200)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/cheesecake.webp" alt="Cheesecake (Blueberry / Chocolate)">
+            <p>Cheesecake (Blueberry / Chocolate) - ₹300</p>
+            <button class="qty-btn" onclick="decreaseQty('cheesecake_blueberry___chocolate')">-</button>
+            <span id="cheesecake_blueberry___chocolate-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('cheesecake_blueberry___chocolate')">+</button>
+            <button onclick="addToCart('cheesecake_blueberry___chocolate', 300)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/jalebi_with_rabdi.jpg" alt="Jalebi with Rabdi">
+            <p>Jalebi with Rabdi - ₹180</p>
+            <button class="qty-btn" onclick="decreaseQty('jalebi_with_rabdi')">-</button>
+            <span id="jalebi_with_rabdi-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('jalebi_with_rabdi')">+</button>
+            <button onclick="addToCart('jalebi_with_rabdi', 180)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/ice_cream_sundae.jpg" alt="Ice Cream Sundae">
+            <p>Ice Cream Sundae - ₹180</p>
+            <button class="qty-btn" onclick="decreaseQty('ice_cream_sundae')">-</button>
+            <span id="ice_cream_sundae-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('ice_cream_sundae')">+</button>
+            <button onclick="addToCart('ice_cream_sundae', 180)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/waffles.jpg" alt="Waffles with Maple Syrup & Ice Cream">
+            <p>Waffles with Maple Syrup & Ice Cream - ₹250</p>
+            <button class="qty-btn" onclick="decreaseQty('waffles_with_maple_syrup_&_ice_cream')">-</button>
+            <span id="waffles_with_maple_syrup_&_ice_cream-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('waffles_with_maple_syrup_&_ice_cream')">+</button>
+            <button onclick="addToCart('waffles_with_maple_syrup_&_ice_cream', 250)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/malpua_with_rabdi.jpg" alt="Malpua with Rabdi">
+            <p>Malpua with Rabdi - ₹200</p>
+            <button class="qty-btn" onclick="decreaseQty('malpua_with_rabdi')">-</button>
+            <span id="malpua_with_rabdi-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('malpua_with_rabdi')">+</button>
+            <button onclick="addToCart('malpua_with_rabdi', 200)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/churros.jpg" alt="Churros with Chocolate Dip">
+            <p>Churros with Chocolate Dip - ₹250</p>
+            <button class="qty-btn" onclick="decreaseQty('churros_with_chocolate_dip')">-</button>
+            <span id="churros_with_chocolate_dip-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('churros_with_chocolate_dip')">+</button>
+            <button onclick="addToCart('churros_with_chocolate_dip', 250)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        <div class="food-item">
+            <img src="../images/shahi_tukda.jpg" alt="Shahi Tukda">
+            <p>Shahi Tukda - ₹220</p>
+            <button class="qty-btn" onclick="decreaseQty('shahi_tukda')">-</button>
+            <span id="shahi_tukda-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('shahi_tukda')">+</button>
+            <button onclick="addToCart('shahi_tukda', 220)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/icecream.webp" alt="Ice Cream Flavors (Vanilla, Chocolate, Strawberry, Butterscotch, Mango, Paan, Pistachio)">
+            <p>Ice Cream - ₹120</p>
+            <button class="qty-btn" onclick="decreaseQty('ice_cream_flavors_vanilla,_chocolate,_strawberry,_butterscotch,_mango,_paan,_pistachio')">-</button>
+            <span id="ice_cream_flavors_vanilla,_chocolate,_strawberry,_butterscotch,_mango,_paan,_pistachio-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('ice_cream_flavors_vanilla,_chocolate,_strawberry,_butterscotch,_mango,_paan,_pistachio')">+</button>
+            <button onclick="addToCart('ice_cream_flavors_vanilla,_chocolate,_strawberry,_butterscotch,_mango,_paan,_pistachio', 120)" class="checkout-btn">Add</button>
+        </div>
+        
+
+</div><h2>Drinks</h2>
+<div class="food-container">
+<div class="food-item">
+            <img src="../images/lassi.webp" alt="Lassi (Sweet/Salted/Mango/Rose)">
+            <p>Lassi - ₹120</p>
+            <button class="qty-btn" onclick="decreaseQty('lassi_sweet_salted_mango_rose')">-</button>
+            <span id="lassi_sweet_salted_mango_rose-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('lassi_sweet_salted_mango_rose')">+</button>
+            <button onclick="addToCart('lassi_sweet_salted_mango_rose', 120)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/cappuccino.jpg" alt="Espresso / Cappuccino">
+            <p>Espresso / Cappuccino - ₹150</p>
+            <button class="qty-btn" onclick="decreaseQty('espresso___cappuccino')">-</button>
+            <span id="espresso___cappuccino-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('espresso___cappuccino')">+</button>
+            <button onclick="addToCart('espresso___cappuccino', 150)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/buble_tea.jpg" alt="Bubble Tea (Taro/Milk/Matcha/Chocolate)">
+            <p>Bubble Tea - ₹200</p>
+            <button class="qty-btn" onclick="decreaseQty('bubble_tea_taro_milk_matcha_chocolate')">-</button>
+            <span id="bubble_tea_taro_milk_matcha_chocolate-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('bubble_tea_taro_milk_matcha_chocolate')">+</button>
+            <button onclick="addToCart('bubble_tea_taro_milk_matcha_chocolate', 200)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/fruit_punch.jpg" alt="Fruit Punch">
+            <p>Fruit Punch - ₹180</p>
+            <button class="qty-btn" onclick="decreaseQty('fruit_punch')">-</button>
+            <span id="fruit_punch-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('fruit_punch')">+</button>
+            <button onclick="addToCart('fruit_punch', 180)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/cold_coffee.jpg" alt="Cold Coffee with Ice Cream">
+            <p>Cold Coffee with Ice Cream - ₹200</p>
+            <button class="qty-btn" onclick="decreaseQty('cold_coffee_with_ice_cream')">-</button>
+            <span id="cold_coffee_with_ice_cream-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('cold_coffee_with_ice_cream')">+</button>
+            <button onclick="addToCart('cold_coffee_with_ice_cream', 200)" class="checkout-btn">Add</button>
+        </div>
+        </div>
+		<br><br>
+		<div class ="food-container">
+        
+        <div class="food-item">
+            <img src="../images/soda.jpg" alt="Masala Soda / Lemon Soda">
+            <p>Masala Soda / Lemon Soda - ₹100</p>
+            <button class="qty-btn" onclick="decreaseQty('masala_soda___lemon_soda')">-</button>
+            <span id="masala_soda___lemon_soda-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('masala_soda___lemon_soda')">+</button>
+            <button onclick="addToCart('masala_soda___lemon_soda', 100)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/thandai.jpg" alt="Thandai">
+            <p>Thandai - ₹150</p>
+            <button class="qty-btn" onclick="decreaseQty('thandai')">-</button>
+            <span id="thandai-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('thandai')">+</button>
+            <button onclick="addToCart('thandai', 150)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/mojito.jpg" alt="Mojito (Classic/Mint/Lemon)">
+            <p>Mojito (Classic/Mint/Lemon) - ₹180</p>
+            <button class="qty-btn" onclick="decreaseQty('mojito_classic_mint_lemon')">-</button>
+            <span id="mojito_classic_mint_lemon-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('mojito_classic_mint_lemon')">+</button>
+            <button onclick="addToCart('mojito_classic_mint_lemon', 180)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/smoothie.webp" alt="Strawberry & Mango Smoothie">
+            <p>Strawberry & Mango Smoothie - ₹200</p>
+            <button class="qty-btn" onclick="decreaseQty('strawberry_&_mango_smoothie')">-</button>
+            <span id="strawberry_&_mango_smoothie-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('strawberry_&_mango_smoothie')">+</button>
+            <button onclick="addToCart('strawberry_&_mango_smoothie', 200)" class="checkout-btn">Add</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="../images/tender_coconut_water.jpg" alt="Tender Coconut Water">
+            <p>Tender Coconut Water - ₹100</p>
+            <button class="qty-btn" onclick="decreaseQty('tender_coconut_water')">-</button>
+            <span id="tender_coconut_water-qty">0</span>
+            <button class="qty-btn" onclick="increaseQty('tender_coconut_water')">+</button>
+            <button onclick="addToCart('tender_coconut_water', 100)" class="checkout-btn">Add</button>
+        </div>
+        
+
+</div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="food-item">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Rs.<span id="total-price">0</span></p>
+        <button class="checkout-btn" onclick="window.location.href='delivery.html'">Checkout</button>
+
+    </section>
+	
+	<footer class="footer">
+        <div class="footer-container">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>FoodieExpress delivers delicious food from your favorite restaurants straight to your door. Order now
+                    and enjoy!</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@foodieexpress.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Address: 123, Food Street, Your City, India</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../images/facebook.webp" alt="Facebook"></a>
+                    <a href="#"><img src="../images/instagram.webp" alt="Instagram"></a>
+                    <a href="#"><img src="../images/x logo.webp" alt="X"></a>
+                </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="footer-section">
+                <h3>We Accept</h3>
+                <img src="../images/visa.webp" alt="Visa">
+                <img src="../images/mastercard.webp" alt="MasterCard">
+                <img src="../images/payapl.webp" alt="PayPal">
+                <img src="../images/upi.webp" alt="UPI">
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 FoodieExpress | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

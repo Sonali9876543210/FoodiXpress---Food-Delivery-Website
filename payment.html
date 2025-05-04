@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - FoodiXpress</title>
+    <link rel="stylesheet" href="../css/style1.css">
+</head>
+<body>
+
+    <div class="payment-container container">
+        <h2>Choose Payment Method</h2>
+
+        <form id="payment-form">
+            <label>
+                <input type="radio" name="payment" value="upi" required> UPI (Google Pay, PhonePe, Paytm)
+            </label>
+            <label>
+                <input type="radio" name="payment" value="card"> Debit/Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment" value="cod"> Cash on Delivery (COD)
+            </label>
+            <button type="submit">Complete Order</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("payment-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from reloading
+
+            let paymentMethod = document.querySelector('input[name="payment"]:checked');
+
+            if (!paymentMethod) {
+                alert("Please select a payment method.");
+                return;
+            }
+
+            alert("Order Placed Successfully!");
+            window.location.href = "thankyou.html";
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - FoodiXpress</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff6600;
+        }
+        .rating-section {
+            margin-top: 20px;
+        }
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .star {
+            font-size: 30px;
+            cursor: pointer;
+            color: #ccc;
+            transition: color 0.3s;
+        }
+        .star:hover, .star.selected {
+            color: #ffcc00;
+        }
+        .rating-message {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Thank You for Your Order!</h2>
+        <p>We appreciate your support. Enjoy your meal!</p>
+
+        <!-- Rating Section -->
+        <div class="rating-section">
+            <h3>Rate Your Experience</h3>
+            <div class="stars" id="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p class="rating-message" id="ratingMessage">Click on the stars to rate.</p>
+        </div>
+    </div>
+
+    <script>
+        const stars = document.querySelectorAll(".star");
+        const ratingMessage = document.getElementById("ratingMessage");
+
+        stars.forEach(star => {
+            star.addEventListener("click", function() {
+                let rating = this.getAttribute("data-value");
+
+                // Reset all stars
+                stars.forEach(s => s.classList.remove("selected"));
+
+                // Highlight selected stars
+                for (let i = 0; i < rating; i++) {
+                    stars[i].classList.add("selected");
+                }
+
+                // Display rating message
+                ratingMessage.textContent = `You rated ${rating} star${rating > 1 ? 's' : ''}!`;
+            });
+        });
+    </script>
+
+</body>
+</html>

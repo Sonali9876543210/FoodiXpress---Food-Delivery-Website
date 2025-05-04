@@ -1,0 +1,159 @@
+/* Import main styles */
+@import url('style.css');
+
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    font-family: 'Urbanist Thin', sans-serif;
+    margin: 0;
+}
+
+/* Common Container Styles */
+.container,
+.signup-container,
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input, Textarea, and Select Styling */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Fix Input Fields */
+input {
+    max-width: 300px;
+    border: 1.5px solid #ccc;
+}
+
+/* Textarea Resizing */
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Dropdown Styling */
+select {
+    cursor: pointer;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Heading Styling */
+h2 {
+    color: #ff5722;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    font-family: 'Urbanist Thin', sans-serif;
+    font-weight: bold;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #e64a19;
+}
+
+/* Signup & Login Form */
+p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+p a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Payment Form */
+#payment-form label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#payment-form input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #ff5722;
+    cursor: pointer;
+}
+
+#payment-form label:not(:first-child) {
+    margin-top: 10px;
+}
+
+/* Thank You Page */
+.thank-you-container {
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+}
+
+.thank-you-container p {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+
+.thank-you-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.thank-you-container a:hover {
+    background: #e64a19;
+}
